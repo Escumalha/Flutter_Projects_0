@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'HomeController.dart';
-
-class HomePage extends StatelessWidget {
+/* class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
@@ -21,5 +19,35 @@ class HomePage extends StatelessWidget {
             controller.increment();
           }),
     );
+  }
+} */
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  var counter = 0;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Melhor oficina do IGUATU"),
+      ),
+      body: Center(
+        child: Text('MultMotos ${counter}'),
+      ),
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: () {
+            setState(() {
+              counter++;
+            });
+          }),
+    );
+    ;
   }
 }
