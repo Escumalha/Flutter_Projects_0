@@ -9,3 +9,12 @@
 /home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/AssetManifest.json
 /home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/kernel_blob.bin
 /home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/NOTICES.Z
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-Regular.ttf
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-Bold.ttf
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-SemiBold.ttf
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-Medium.ttf
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-ExtraBold.ttf
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-ExtraLight.ttf
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-Black.ttf
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-Light.ttf
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-Thin.ttf
