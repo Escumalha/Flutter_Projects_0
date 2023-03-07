@@ -63,9 +63,9 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
+    - assets/images/ImgFoodCards0.png
     - assets/images/ImgFoodCards1.png
     - assets/images/ImgFoodCards2.png
-    - assets/images/ImgFoodCards3.png
     - assets/fonts/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
