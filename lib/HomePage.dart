@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'FuncAux.dart';
 
@@ -28,63 +30,75 @@ class _HomePageState extends State<HomePage> {
           elevation: 0,
           backgroundColor: const Color.fromRGBO(255, 227, 125, 1),
         ),
-        body: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Expanded(
-            child: Container(
-              height: 100,
-              padding: const EdgeInsets.all(20),
-              child: TextField(
-                  maxLines: null,
-                  minLines: null,
-                  expands: true,
-                  decoration: InputDecoration(
-                      floatingLabelBehavior: FloatingLabelBehavior.never,
-                      prefixIcon: const Icon(Icons.search, size: 30),
-                      prefixIconColor: const Color.fromRGBO(255, 227, 125, 1),
-                      enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(8),
-                          borderSide: const BorderSide(
-                              color: Color.fromRGBO(5, 31, 50, 1), width: 2)),
-                      focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(8),
-                          borderSide: const BorderSide(
-                              color: Color.fromRGBO(5, 31, 50, 1), width: 2)),
-                      isDense: true,
-                      labelText: "Pesquisar",
-                      labelStyle: const TextStyle(
-                        color: Color.fromRGBO(5, 31, 50, 0.7),
-                        fontFamily: 'Inter',
-                        fontSize: 20,
-                        fontWeight: FontWeight.w500,
-                      ))),
-            ),
+        body: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+          Container(
+            height: 100,
+            padding: const EdgeInsets.all(20),
+            child: TextField(
+                maxLines: null,
+                minLines: null,
+                expands: true,
+                decoration: InputDecoration(
+                    floatingLabelBehavior: FloatingLabelBehavior.never,
+                    prefixIcon: const Icon(Icons.search, size: 30),
+                    prefixIconColor: const Color.fromRGBO(255, 227, 125, 1),
+                    enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        borderSide: const BorderSide(
+                            color: Color.fromRGBO(5, 31, 50, 1), width: 2)),
+                    focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8),
+                        borderSide: const BorderSide(
+                            color: Color.fromRGBO(5, 31, 50, 1), width: 2)),
+                    isDense: true,
+                    labelText: "Pesquisar",
+                    labelStyle: const TextStyle(
+                      color: Color.fromRGBO(5, 31, 50, 0.7),
+                      fontFamily: 'Inter',
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ))),
           ),
-          ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: 3,
-            itemBuilder: (BuildContext context, int index) => Card(
-              child: SizedBox(
-                height: 200,
-                width: 200,
-                child: Card(
-                  child: InkWell(
-                    child: Image.asset("assets/images/ImgFoodCards1.png"),
+          Container(
+              padding: const EdgeInsets.all(8),
+              height: 120,
+              width: MediaQuery.of(context).size.width,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 3,
+                itemBuilder: (BuildContext context, index) => Container(
+                  width: 180,
+                  child: Card(
+                    color: Colors.blueAccent,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12)),
+                    child: Stack(children: [
+                      Ink.image(
+                        image:
+                            const AssetImage('assets/images/ImgFoodCards1.png'),
+                        child: InkWell(
+                          onTap: () {},
+                        ),
+                        height: 180,
+                        fit: BoxFit.cover,
+                      ),
+                      const DecoratedBox(
+                        decoration: BoxDecoration(),
+                        child: Text(
+                          'Comida',
+                          style: TextStyle(
+                            backgroundColor: Color.fromRGBO(5, 31, 50, 1),
+                            color: Colors.white,
+                            fontFamily: 'Inter',
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      )
+                    ]),
                   ),
                 ),
-              ),
-            ),
-          )
+              )),
         ]));
   }
-
-  DropdownMenuItem<String> BuildMenuItem(String item) => DropdownMenuItem(
-        value: item,
-        child: Text(item,
-            style: const TextStyle(
-              color: Color.fromRGBO(255, 227, 125, 1),
-              fontFamily: 'Inter',
-              fontSize: 16,
-              fontWeight: FontWeight.w500,
-            )),
-      );
 }

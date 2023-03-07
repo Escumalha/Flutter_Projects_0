@@ -21,7 +21,7 @@ EdgeInsetsGeometry PaddingTopNavBarBuilder(int index) {
   }
 }
 
-Widget BuildCards(int index) {
+Widget? BuildCards(int index) {
   var img = Image.asset("");
   switch (index) {
     case 0:
