@@ -1,4 +1,4 @@
-#Tue Mar 07 18:49:02 BRT 2023
+#Wed Mar 08 00:34:01 BRT 2023
 base.0=/home/breno/Documentos/Flutter-Projects/hello_world/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

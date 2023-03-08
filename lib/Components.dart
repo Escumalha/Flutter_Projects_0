@@ -6,36 +6,43 @@ class HomeCarroussel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: const EdgeInsets.all(8),
-        height: 120,
-        width: MediaQuery.of(context).size.width,
-        child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: 3,
-          itemBuilder: (BuildContext context, index) => SizedBox(
+      padding: const EdgeInsets.all(8),
+      height: 180,
+      width: MediaQuery.of(context).size.width,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: 3,
+        itemBuilder: (BuildContext context, index) =>
+            Stack(alignment: AlignmentDirectional.center, children: [
+          SizedBox(
             width: 180,
+            height: 120,
             child: Card(
               elevation: 3,
               color: Colors.blueAccent,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
-              child:
-                  Stack(alignment: AlignmentDirectional.bottomEnd, children: [
-                Ink.image(
-                  image: AssetImage("assets/images/ImgFoodCards$index.png"),
-                  fit: BoxFit.fill,
-                  child: InkWell(
-                    onTap: () {},
-                  ),
+              child: Ink.image(
+                image: AssetImage("assets/images/ImgFoodCards$index.png"),
+                fit: BoxFit.fill,
+                child: InkWell(
+                  onTap: () {},
                 ),
-                DecoratedBox(
-                  decoration: const BoxDecoration(
-                    color: Color.fromRGBO(5, 31, 50, 1),
-                    borderRadius:
-                        BorderRadius.only(bottomRight: Radius.circular(8)),
-                  ),
-                  child: Container(
-                    padding: const EdgeInsets.all(8),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 12,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(minWidth: 100),
+              child: DecoratedBox(
+                decoration: const BoxDecoration(
+                  color: Color.fromRGBO(5, 31, 50, 1),
+                  borderRadius: BorderRadius.all(Radius.circular(8)),
+                ),
+                child: Container(
+                  padding: const EdgeInsets.all(8),
+                  child: Center(
                     child: Text(
                       TextFromImage(index),
                       style: const TextStyle(
@@ -46,11 +53,13 @@ class HomeCarroussel extends StatelessWidget {
                       ),
                     ),
                   ),
-                )
-              ]),
+                ),
+              ),
             ),
-          ),
-        ));
+          )
+        ]),
+      ),
+    );
   }
 
   String TextFromImage(int index) {

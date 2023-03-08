@@ -18,3 +18,6 @@
 /home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-Black.ttf
 /home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-Light.ttf
 /home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/fonts/Inter-Thin.ttf
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/ImgFoodCards1.png
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/ImgFoodCards2.png
+/home/breno/Documentos/Flutter-Projects/hello_world/build/linux/x64/debug/bundle/data/flutter_assets/assets/images/ImgFoodCards0.png
