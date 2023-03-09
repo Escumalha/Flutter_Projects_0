@@ -31,8 +31,24 @@ class _HomePageState extends State<HomePage> {
           elevation: 0,
           backgroundColor: const Color.fromRGBO(255, 227, 125, 1),
         ),
-        body: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: const [SearchBar(), HomeCarroussel()]));
+        body: ListView(scrollDirection: Axis.vertical, children: const [
+          SearchBar(),
+          HomeCarroussel(),
+          HomeCarrousselCategories(),
+          Padding(
+            padding: EdgeInsets.only(left: 20),
+            child: Text(
+              "Últimas lojas",
+              textAlign: TextAlign.start,
+              style: TextStyle(
+                color: Color.fromRGBO(5, 31, 50, 1),
+                fontFamily: 'Inter',
+                fontSize: 24,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          HomeCarrousselRestaurants()
+        ]));
   }
 }

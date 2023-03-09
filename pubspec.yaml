@@ -66,6 +66,13 @@ flutter:
     - assets/images/ImgFoodCards0.png
     - assets/images/ImgFoodCards1.png
     - assets/images/ImgFoodCards2.png
+    - assets/images/ImgFoodCategories0.png
+    - assets/images/ImgFoodCategories1.png
+    - assets/images/ImgFoodCategories2.png
+    - assets/images/ImgRest0.png
+    - assets/images/ImgRest1.png
+    - assets/images/ImgRest2.png
+    - assets/images/ImgRest3.png
     - assets/fonts/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
